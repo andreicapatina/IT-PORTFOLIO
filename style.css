@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+/* Default theme (white) */
+:root {
+    --background-color: #f0e7db;
+    --text-color: black;
+    --container-bg-color: #FFFFFF5C;
+
+    --btn-color: white;
+    --btn-bg-color: #319795;
+    --btn-bg-color-hover: #2c7a7b;
+}
+
+/* Dark theme */
+body.dark-theme {
+    --background-color: #202023;
+    --text-color: white;
+    --container-bg-color:#FFFFFF14;
+
+    --btn-color: black;
+    --btn-bg-color: #81E6d9;
+    --btn-bg-color-hover: #4fd1c5;
+}
+
+/* Apply the variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+
+    margin: 0 auto;
+    width: 700px;
+
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px;
+}
+
+.navbar__logo {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--text-color);
+    
+    font-weight: 600;
+}
+
+/* .navbar__logo-img {
+    filter: invert(1);
+} */
+
+.navbar__links {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navbar__theme-button-icon {
+    background-color: #FFFFFF14; 
+    border: 1px; 
+    border-radius: 8px;
+
+    width: 40px;
+    height: 40px; 
+    font-size: 18px; 
+
+    cursor: pointer;
+}
+
+.navbar__theme-button-icon:hover {
+    font-size: 22px;
+    transition: 0.2s;
+}
+
+main, footer {
+    margin: 0 auto;
+    width: 500px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.introduction {
+    /* margin: 0 auto;
+    width: 500px; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction__image {
+    /* display: flex; */
+    margin: 20px auto;
+    width: 250px;
+    height: 250px;
+}
+
+.introduction__greating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--container-bg-color);
+    height: 48px;
+    border-radius: 10px;
+}
+
+.introduction__title {
+    font-size: 32px;
+    font-family: "Poppins", sans-serif;
+}
+
+.introduction__subTitle {
+    margin-top: -24px;
+}
+
+.introduction__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.introduction__photo {
+    margin-top: 28px;
+    border-radius: 50%;
+    border: 2px solid white; 
+}
+
+.underlined-text {
+    text-decoration: underline; 
+    text-decoration-thickness: 4px; 
+    text-underline-offset: 10px;
+}
+
+.download-cv-button {
+    display: inline-block; /* Makes the link behave like a block element */
+    background-color: var(--btn-bg-color); /* Green background */
+    color: var(--btn-color); /* White text */
+    padding: 8px 20px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline from link */
+    font-size: 16px; /* Font size */
+    font-weight: 600;
+    margin-top: 20px; /* Space above the button */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    width: 170px;
+
+    margin: 20px auto;
+
+
+}
+
+.download-cv-button:hover {
+    background-color: var(--btn-bg-color-hover);/* Darker green on hover */
+}
+
+
+.projects__list {
+    display: grid;
+    grid-template-columns: 220px 220px;
+    justify-content: space-between;
+
+    text-align: center;
+    margin-top: 40px;
+}
+
+.projects__item {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.projects__list h4 {
+    margin: 10px 0 -10px 0;
+}
+
+.projects__list p {
+    margin-bottom: 50px;
+}
+
+/* ------ Contacts ------ */
+
+
+.contact-info h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.contact-info p {
+    font-size: 16px;
+}
+
+.contact-info-item {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info-item i {
+    color: #095cb6;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.bold-text {
+    font-weight: 500;
+}
+
+.form-container h2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+  
+.form-group {
+    margin-bottom: 15px;
+}
+
+input,
+textarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #888;
+}
+
+input[id="name"],
+input[id="email"] {
+    display: inline-block;
+    width: calc(50% - 12px);
+}
+
+textarea {
+    width: calc(100% - 20px);
+    height: 80px;
+}
+
+.form-container button {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-color);
+    padding: 12px 36px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+  
+.form-container button:hover {
+    background-color: var(--btn-bg-color-hover)
+}
+
+.contact-contaier {
+    display: flex;
+}
+
+.contact-info {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.form-container {
+    margin-top: 26px;
+}
+

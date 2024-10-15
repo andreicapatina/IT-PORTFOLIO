@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="navbar__logo" aria-label="Home">
+                <img src="./public/raccon-icon.png" alt="logo icon" class="navbar__logo-img" width="30px" height="30px">
+                <p class="navbar__logo-text">Awesome Portfolio</p>
+            </a>
+            <ul class="navbar__links">
+                <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">About-Me</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Skills</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Projects</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link">Contacts</a></li>
+            </ul>
+            <div class="navbar__theme-button">
+                <button class="navbar__theme-button-icon" aria-label="Toggle theme">🔆</button>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <main>
+        <section class="introduction">
+            <img src="./public/raccon-voxel.png" alt="voxel-style-raccoon" class="introduction__image">
+            <div class="introduction__greating">
+                <p>Hello, I'm a developer who loves turning ideas into reality!</p>
+            </div>
+            <div class="introduction__content">
+                <div class="introduction__name-container">
+                    <h1 class="introduction__title">Căpățînă Andrei</h1>
+                    <p class="introduction__subTitle">Front-End Developer ( Artist / Designer / Creator )</p>
+                </div>
+                <img src="./public/my-photo.png" alt="Căpățînă Andrei" class="introduction__photo" width="100px" height="100px">
+            </div>
+            <h3 class="underlined-text">About</h3>
+            <p>&emsp; I am a tech enthusiast and front-end developer. Currently studying at the Technical University of Moldova, I’m passionate about creating interactive web experiences and solving real-world problems with code. When I'm not coding, I enjoy exploring design concepts and experimenting with new technologies. My portfolio showcases a range of personal projects that reflect my journey and commitment to continuous learning in the ever-evolving world of web development.</p>
+            <a href="./public/resume-Capatina-Andrei.pdf" class="download-cv-button" target="_blank">Download CV</a>
+        </section>
+
+        <section class="projects">
+            <h3 class="projects__title underlined-text">Projects</h3>
+            <section class="projects__list">
+                <a href="https://andreicapatina.github.io/contact-us-page/" target="_blank" class="projects__item">
+                    <img src="./public/projects/contact-us-project.png" alt="" width="220px" height="140px" style="border-radius: 10px;">
+                    <h4>Contact us page</h4>
+                    <p>An easy-to-use 'Contact Us' page for user inquiries.</p>
+                </a>
+                <a href="https://andreicapatina.github.io/chess-table/" target="_blank" class="projects__item">
+                    <img src="./public/projects/chess-table-project.png" alt="" width="220px" height="140px" style="border-radius: 10px;">
+                    <h4>Chess Table</h4>
+                    <p>A visually front-end layout for a chess interface.</p>
+                </a>
+                <a href="https://andreicapatina.github.io/tea-cozy/" target="_blank" class="projects__item">
+                    <img src="./public/projects/tea-cozy-project.png" alt="" width="220px" height="140px" style="border-radius: 10px;">
+                    <h4>Tea-Cozy</h4>
+                    <p>A minimalist static webpage displaying beautiful tea cozy options</p>
+                </a>
+                <a href="https://andreicapatina.github.io/actor-cards/" target="_blank" class="projects__item">
+                    <img src="./public/projects/actor-cards-project.png" alt="" width="220px" height="140px" style="border-radius: 10px;">
+                    <h4>Actor Cards</h4>
+                    <p>A dynamic layout for actor cards, featuring images and bios.</p>
+                </a>
+            </section>
+
+            <section class="contacts">
+                <h3 class="underlined-text">Contacts</h3>
+                <div class="form-container">
+                    <h4>Send me a message</h4>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Name">
+                            <input type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+    
+    <script src="./script.js"></script>
+
+
+</body>
+</html>
